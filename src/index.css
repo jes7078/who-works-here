@@ -1,12 +1,324 @@
 :root {
-  font: 16px / 1 sans-serif;
+	font: 16px / 1 sans-serif;
 }
 
 html {
-  height: 100%;
+	height: 100%;
 }
 
 body {
-  margin: 0;
-  min-height: 100%;
+	margin: 0;
+	min-height: 100%;
+	background-color: lightsteelblue;
+}
+
+#title {
+	text-align: center;
+	background-image: url(https://i.gifer.com/U8BJ.gif);
+	color: transparent;
+	background-clip: text;
+	font-size: 3rem;
+	padding: 0;
+	margin: 0;
+	margin-top: .5rem;
+}
+
+.header {
+	border: 1px solid slategray;
+	background-color: lightslategray;
+	margin-bottom: 1rem;
+}
+
+.header nav ul {
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+.header ul li {
+	list-style: none;
+	padding: .25rem;
+	margin: 0;
+}
+
+.header ul li a {
+	text-decoration: none;
+	color: darkslategray;
+	font-size: .75rem;
+}
+
+.inputBars {
+	font-size: 2rem;
+	display: flex;
+	flex-direction: column;
+	border: 2px solid grey;
+	width: 75%;
+	margin: auto;
+	background-color: rgb(255, 255, 255);
+}
+
+.inputBar {
+	font-size: 1rem;
+	text-align: center;
+	margin: auto;
+	width: 96%;
+}
+
+.storeB {
+	display: flex;
+}
+
+#storeButton {
+	font-size: 1rem;
+	border: 2px solid gray;
+	background-color: lightgray;
+	margin: auto;
+	margin-top: .25rem;
+	margin-bottom: .25rem;
+}
+
+#storeButton:hover {
+	background-color: lightgreen;
+}
+
+.employeesHomePage {
+	margin: auto;
+	margin-top: .5rem;
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+}
+
+.employeeHome {
+	width: 100%;
+	border: 1px solid darkslategray;
+	margin: .25rem;
+	border-radius: 10px;
+}
+
+.employeeHomePicSection {
+	width: 100%;
+}
+
+.employeeHomePicSection ul {
+	margin: .25rem;
+	padding: .25rem;
+}
+
+.employeeHomePicSection li {
+	list-style: none;
+	padding: .25rem;
+	margin: auto;
+	text-align: center;
+}
+
+.employeeHomePicSection a {
+	text-decoration: none;
+	font-size: .75rem;
+}
+
+#homePic {
+	border: 1.5px solid black;
+	border-radius: 30px;
+	height: 100%;
+	width: 12rem;
+}
+
+#homePic:hover {
+	animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+	}
+}
+
+.employeeHomeText {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+
+.employeeHomeText ul {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	padding: 1.5rem;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.employeeHomeText li {
+	list-style: none;
+	margin: 0;
+	padding-top: .25rem;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.employeeDetails {
+	width: 90%;
+	margin: auto;
+}
+
+.employeeDetailsDataSection {
+	border: 2px solid darkslategray;
+	border-radius: 10px;
+}
+
+.employeeDetailsPictureSection {
+	padding: 1rem;
+	width: 100%;
+	margin: auto;
+	display: flex;
+}
+
+.employeeDetailsPictureSection img {
+	width: 12rem;
+	border: 1px solid black;
+	border-radius: 10px;
+	margin: auto;
+	margin-bottom: 1rem;
+}
+
+.employeeDetailsPictureSection img:hover {
+	transform: scale(1.2);
+	transition: .3s ease-in-out;
+}
+
+.employeeDetailsText {
+	display: flex;
+	margin: auto;
+}
+
+.employeeDetailsText ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: auto;
+}
+
+.employeeDetailsText li {
+	color: darkslategray;
+	padding: .1rem;
+}
+
+.deleteButtonSection {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.deleteButton {
+	font-size: 1rem;
+	color: red;
+	border: 1px solid black;
+	margin: auto;
+	padding: .5rem;
+	margin-top: .25rem;
+	margin-bottom: .25rem;
+}
+
+.deleteButton:hover {
+	background-color: lightgreen;
+}
+
+#trueFalse {
+	font-size: 1rem;
+	display: flex;
+	width: 92%;
+	background-color: rgb(255, 255, 255);
+	margin: auto;
+	padding: .5rem;
+	justify-content: center;
+}
+
+#fullTimeSelection {
+	padding-top: .25rem;
+	padding-left: 1rem;
+	display: flex;
+	flex-direction: row;
+	color: grey;
+}
+
+#fullTimeSelection label {
+	display: flex;
+	align-items: center;
+}
+
+input[type=radio] {
+	display: inline-block;
+	height: .8rem;
+	vertical-align: middle;
+	width: .8rem;
+	margin: .2rem;
+}
+#partTimeSelection {
+	padding-top: .25rem;
+	padding-left: 1rem;
+	display: flex;
+	flex-direction: row;
+	color: grey;
+}
+#partTimeSelection label {
+	display: flex;
+	align-items: center;
+}
+
+#birthday {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	font-size: 1rem;
+	background-color: rgb(255, 255, 255);
+	color: grey;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#birthday label {
+	padding-right: .25rem;
+	width: 50%;
+	text-align: right;
+}
+#birthday input {
+	padding-left: .25rem;
+	width: 50%;
+	text-align: left;
+}
+
+#hireDate {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	font-size: 1rem;
+	background-color: rgb(255, 255, 255);
+	color: grey;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+#hireDate label {
+	padding-right: .25rem;
+	width: 50%;
+	text-align: right;
+}
+
+#hireDate input {
+	padding-left: .25rem;
+	width: 50%;
+	text-align: left;
+}
+
+input[type=date] {
+	color: grey;
 }
